@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Exercicios HTML / JS / CSS</title>
+	<meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+
+	<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+	<nav id="menu">
+		<ul class="navigation">
+			<!-- <li><a href="#aula5" id="">Aulas 5</a></li> -->
+			<li><a href="#aula6" id="">Aula 6 - <strong>CSS + JS</strong></a></li>
+			<li><a href="#aula7" id="">Aula 7 - <strong>JS</strong></a></li>
+			<li><a href="#aula9" id="">Aula 9 - <strong>PHP</strong></a></li>
+		</ul>
+		<div class="copyrigth">© Hugo Campos | AESO  <strong>linkedin.com/in/hugocamposs</strong></div>
+	</nav>
+	<div id="wrapper">
+		<section id="aula6" class="section" name="aula6">
+			<div class="title">Exercicios Slide 6</div>
+			<div id="column1" class="column">
+				<h1>Conversor de Temperatura</h1>
+				<h4>Converta de Celsius (°C) para Fahrenheit (°F)</h4>
+				<section class="center">
+					<label for="celsius"><input id="celsius" type="text" placeholder="Graus em Celsius °C "></label>
+					<button id="conversor" onclick="converterFahrenheit()">Converter</button>
+					<p id="resultado"></button>
+				</section>
+			</div>
+
+			<div id="column2" class="column">
+				<img src="" alt="" id="image">
+				<h1>Cálculo IMC</h1>
+				<section class="center">
+					<label for="peso"><input id="peso" type="text" placeholder="Qual seu peso atual? "></label>
+					<label for="altura"><input id="altura" type="text" placeholder="Qual sua altura? "></label>
+					<button id="calculator" onclick="calculoIMC()">Calcular</button>
+					<p id="resultadoIMC"></button>
+				</section>
+			</div>
+
+			<div id="column3" class="column">
+				<h1>Conversor de Medidas (cm / polegadas)</h1>
+				<section class="center">
+					<label for="cmt"><input id="cmt" type="number" placeholder="Informe os centimetros: " oninput="conversorCmPolegadas()" onchange="conversorCmPolegadas()"></label>
+					<p id="resultadoCMT"></button>
+				</section>
+			</div>
+
+			<div id="column4" class="column">
+				<h1>Conversor de Medidas (litros / galões)</h1>
+				<section class="center">
+					<label for="litros"><input id="litros" type="number" placeholder="Informe a quantidade em litros: " oninput="conversorLitrosGaloes()" onchange="conversorLitrosGaloes()"></label>
+					<p id="resultadoLitros"></button>
+				</section>
+			</div>
+
+			<div id="column5" class="column">
+				<h1>Conversor de Medidas (m² / hectares)</h1>
+				<section class="center">
+					<label for="m2"><input id="m2" type="number" placeholder="Informe a quantidade em m²: " oninput="conversorM2Hectares()" onchange="conversorM2Hectares()"></label>
+					<p id="resultadoMedidas"></button>
+				</section>
+			</div>
+		</section>
+
+		<section id="aula7" class="section" name="aula7">
+			<div class="title">Exercicios Slide 07</div>
+			<div id="column1" class="column">
+				<h1>Validador de Campos em Formulário</h1>
+				<h4>Tente submeter o campo sem preenche-lo</h4>
+				<section class="center">
+					<label for="nome"><input id="nome" type="text" placeholder="Insira seu nome: "></label>
+					<button id="submeter" onclick="submeterForm()">Enviar</button>
+					<p id="resultadoInputForm"></button>
+				</section>
+			</div>
+			<div id="column2" class="column">
+				<h1>Conversor de Medidas</h1>
+				<section class="center">
+					<label for="peso"><input id="peso" type="text" placeholder="Qual seu peso atual? "></label>
+					<label for="altura"><input id="altura" type="text" placeholder="Qual sua altura? "></label>
+					<button id="conversorM">Converter Medidas</button>
+					<p id="resultadoMedidas"></button>
+				</section>
+			</div>
+			<div id="column3" class="columnBigger">
+				<h1>Gerar informações do navegador</h1>
+				<section class="center">
+					<button id="submeter" onclick="infoNavegador()">Descobrir dados</button>
+					<button id="resetar" onclick="resetInfoNavegador()">Limpar Dados</button>
+					<p id="resultadoInfoNavegador"></p>
+				</section>
+			</div>
+		</section>
+	</div>
+	
+	<script type="text/javascript" src="script.js"></script>
+
+</body>
+</html>
